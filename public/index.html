@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>π as a service</title>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+   
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+    h1 {
+      font-size : 300px;
+    }
+    </style>
+    <link href="material.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <a href="https://github.com/hexapode/piaas"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+  <div class="container">
+    <center class='header'>
+      <h1>π</h1>
+      <h2>As a Service</h2>
+    </center> 
+
+    <br/>
+    <br/>
+    <br/>
+    <h3>GET http://piaas.org/pi</h3>
+    <div class='well'>
+      <h4><b>Parameters</b></h4>
+      <div><b>from</b> (default : 0), the index of the digit you want to get, max 1.000.000.000.</div>
+      <div><b>digits</b> (default : 1000), the number of the digit you want to get, max 100.000.</div>
+      <div><b>json</b> if set return format will be JSON</div>
+      <div><b>jsonp</b> if set return value will be JSONP, and the function wich name is passed will be called</div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <h2>Examples</h2>
+    <h3>GET http://piaas.org/pi?digits=16</h3>
+    <div class='well'><b>1415926535897932</b></div>
+    <br/>
+    <h3>http://piaas.org/pi?digits=16&from=2015</h3>
+    <div class='well'><b>9468398352595709</b></div>
+    <br/>
+    <h3>http://piaas.org/pi?digits=16&from=2015&json=1</h3>
+    <div class='well'><b>{"num":"9468398352595709","digits":16,"from":2015}</b></div>
+    <br/>
+    <h3>http://piaas.org/pi?digits=16&from=2015&sonp=pi</h3>
+    <div class='well'><b>;pi({"num":"9468398352595709","digits":16,"from":2015});</b></div>
+  <br/>
+  <br/>
+  <br/>
+
+
+  <div class='pull-right'>by pierre - at - pld.io</div>
+  <br/>
+  </div>
+
+  <br/>
+  <br/>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-686690-27', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+
+
+
+</html>
